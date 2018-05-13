@@ -1,9 +1,8 @@
 /* General Formatting */
 
 body {
-	font-family: Verdana;
+	
 }
-
 
 /* Header Bar */
 .header-container {
@@ -29,6 +28,7 @@ body {
 	.header-title {
 		/* Dev border *//*
 		border: 1px red solid; */
+		font-family: Verdana;
 		align-self: center;
 		flex-grow: 1;
 		color: MediumAquamarine;
@@ -51,52 +51,31 @@ body {
 
 
 /* Main Body */
-
-.main-container {
-	/* Dev border */
-	border: 1px black solid;*/
-	display: flex;
-	flex-direction: row;
-	width: auto;
-	position: relative;
-	top: 100px;
+.container {
+	width: 1440px;
 }
-
-	.column-lg {
-		/* Dev border */
-		border: 1px red solid;*/
-		padding: 10px;
-		margin: 10px;
-		flex-direction: column;
+	.column {
+		border:1px red solid;
 		display: inline-flex;
-		width: 630px;
-	}
-
-	.column-md {
-		/* Dev border */
-		border: 1px red solid;*/
-		padding: 10px;
-		margin: 10px;
 		flex-direction: column;
-		display: inline-flex;
-		width: 300px;		
+		position: relative;
+		top: 100px;
 	}
-
-	.column-sm {
-		/* Dev border */
-		border: 1px red solid;*/
-		padding: 10px;
-		margin: 10px;
-		flex-direction: column;
-		display: inline-flex;
-		width: 240px;	
-	}
-
-		.article {
-			/* Dev border */
-			border: 1px blue solid;*/
-			padding: 10px;
-			margin: 10px;
-
-
+		.column.lg {
+			width: 640px;
 		}
+		.column.md {
+			width: 360px;
+		}
+		.column.sm {
+			width: 240px;
+		}
+			.box {
+				display: flex;
+				flex-direction: column;
+				border: 1px blue solid;
+			}
+			#storymain {
+				background-color: red;
+
+	{
