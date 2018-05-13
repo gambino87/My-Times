@@ -57,6 +57,9 @@ body {
 	border: 1px black solid;*/
 	display: flex;
 	flex-direction: row;
+	width: auto;
+	position: relative;
+	top: 100px;
 }
 
 	.column-lg {
