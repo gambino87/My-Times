@@ -1,10 +1,10 @@
 /* General Formatting */
-
-body {
-	
+* {
+	padding: 0px;
+	margin: 0px;
 }
-
 /* Header Bar */
+
 .header-container {
 	/* Dev border *//*
 	border: 1px green solid; */
@@ -52,30 +52,94 @@ body {
 
 /* Main Body */
 .container {
-	width: 1440px;
+	/* dev border *//*
+	border:1px black solid; */
+	display: flex;
+	position: relative;
+	top: 100px;
 }
+
+/* Columns */
 	.column {
-		border:1px red solid;
-		display: inline-flex;
-		flex-direction: column;
-		position: relative;
+		/* dev border *//*
+		border:1px red solid; */
 		top: 100px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-right: 32px;
 	}
 		.column.lg {
-			width: 640px;
+			width: 630px;
+			justify-content: space-between;
 		}
 		.column.md {
-			width: 360px;
+			width: 300px;
+			flex-direction: column;
 		}
 		.column.sm {
 			width: 240px;
+			flex-direction: column;
 		}
-			.box {
-				display: flex;
-				flex-direction: column;
-				border: 1px blue solid;
-			}
-			#storymain {
-				background-color: red;
 
-	{
+/* Boxes within columns */
+	.box {
+		/* dev border *//*
+        border:1px blue solid; */
+        font-family: Georgia;
+        display: flex;
+        flex-direction: column;
+	}
+		.text-content {
+			justify-content: center;
+			margin-top: 20px;
+			width: 300px;
+			min-height: 300px;
+			align-content: center;
+		}
+			p.narrative {
+				font-family: Georgia;
+	    		font-size: 17px;
+	    		margin-top: 16px;
+				color: black;
+		}
+		.story {
+		}
+		.img-content {
+			justify-content: center;
+			margin-top: 20px;
+			height: 300px;
+			width: 300px;
+			font-weight: bold;
+			text-align: center;
+			font-size: 30px;
+			color: white;
+		}
+
+/* Story Banners */
+.mainstory {
+	background-image: url(../img/img-story-main.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.earthsping {
+	background-image: url(../img/img-story-2.png);
+	height: 300px;
+}
+
+.catcontrol {
+	background-image: url(../img/img-story-1.png);
+	font: white;
+	height: 300px;
+}
+
+.photo {
+	background-image: url(../img/img-story-3.png);
+	height: 300px;
+}
